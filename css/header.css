@@ -1,10 +1,87 @@
 .header {
-  max-width: 1200px;
-  padding: 40px 20px;
-  margin: 0 auto;
+  max-width: 100%;
+  min-height: 1000px;
+  max-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.marca {
+  background: rgb(116, 138, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(116, 138, 107, 0.9057471264367816) 17%,
+    rgb(247, 247, 247) 100%
+  );
+  position: relative;
+}
+.marca h1 {
+  margin-top: 250px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+  text-align: left;
+  font-size: 7rem;
+  line-height: 0.9;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 6ch;
+  color: rgba(231, 236, 229, 0.906);
+}
+.marca h1 span {
+  color: rgba(95, 112, 88, 0.906);
+}
+.nosso-trabalho {
+  margin-left: 207px;
+  color: #ffffffc5;
+  border: solid 1px;
+  padding: 16px 24px;
+  border-color: #ffffffc5;
+}
+
+.nosso-trabalho:hover {
+  transition: 0.2s;
+  color: rgba(116, 138, 107, 0.9057471264367816);
+  background-color: #ffffff6c;
+}
+
+.marca img {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  bottom: 15px;
+  right: 10px;
+}
+.img-inicio {
+  background-image: url(../img/foto\ com\ camera\ portifolio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -350px;
+  position: relative;
+}
+.img-inicio img {
+  left: -140px;
+  top: 30px;
+  height: 7rem;
+  width: 18rem;
+  position: absolute;
+}
+.flex-primeiro {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 350px;
+}
+.agende {
+  color: #b56c38c5;
+  border: solid 1px;
+  padding: 16px 24px;
+  border-color: #b56c38c5;
+  flex-wrap: wrap;
+}
+.agende:hover {
+  transition: 0.2s;
+  color: #f5f5f5;
+  background-color: #b56c38c5;
 }
 
 .header-menu {
@@ -12,23 +89,4 @@
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.header-menu a {
-  font-size: 1.125rem;
-  line-height: 1.3;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #141414;
-  display: block;
-}
-@media (max-width: 800px){
-  .header{
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-  }
-  .header a{
-    background: #f5f5f5;
-  }
 }
